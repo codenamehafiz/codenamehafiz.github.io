@@ -342,3 +342,8 @@ footer .footer-below {
 .modal-header-color{
 	background-color: #760b25;
 }
+
+.link-opacity img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
