@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <link rel="shortcut icon" href="img/mini_me.png">
+  <title>Hafiz Idris, Portfolio</title>
+  
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">  
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="js/transition.js"></script>
+  <script src="js/collapse.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<span id="myspan" class = "navbar-content-left"><a class="logo" href="index.html"></a> Hafiz Idris</span>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html"><span class="navbar-content-right"> About</span></a></li>
+					<li class="active"><a href="portfolio.html"><span class="navbar-content-right"> Portfolio</span></a></li>
+					<li><a href="contact.html"><span class="navbar-content-right"> Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class = "container">
+		<center>
+		<p class = "textred">Portfolio</p>
+		<div class = "col-lg-6 col-lg-push-3 col-xs-12">
+			<p>I will show my latest work here whether it is work project (that can be shared) or personal project.</p>
+		</div>
+		</center>
+		<br>
+		<div class="col-lg-8 col-lg-push-2">
+			<img onload="this.style.opacity='1';" class="fadeincss" src="img/portfolio.png" height="100%" width="100%">
+		</div>
+	</div>
+  <div class="bg-softred" style="color: #FFFFFF;">
+	<div class = "container">
+		<center>
+		<p class = "textwhite">Work project</p>
+		<br>
+		<div class = "col-lg-8 col-lg-push-2 col-xs-12">
+		<p>
+		<b>Kiasu Perks</b>
+		<br>
+		<span style="font-size: 10px;">Category: Web Development and Mobile Development</span>
+		</p>
+		</div>
+
+		</center>
+		<ul class="col-lg-8 col-lg-push-2 col-xs-12" style="list-style-type:square">
+		  <li>Fully develop a dashboard styled web pages using HTML, CSS, Javascript, Jquery codes and Bootstrap for the responsive interface.</li>
+		  <li>Develop using AJAX to call the API that have been prepared by the back-end team.</li>
+		  <li>Handled small parts of mobile apps development using Unity and Ionic Framework.</li>
+		</ul>
+	</div>
+	<center>
+	<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+	<span class="glyphicon glyphicon-search" aria-hidden="true"></span> More info</button>
+	</center>
+	<br>
+	</div>
+	
+<!-- First modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header modal-header-color">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="textwhite" aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title textwhite" id="myModalLabel">Kiasu Perks</h4>
+      </div>
+      <div class="modal-body">
+		<!-- Modal 1 - Content 1-->
+        <center><p><b>Staff Management Page</b></p>
+		<img src = "img/screen-1.jpg" height="70%" width="70%">
+		<br>
+		<b>About:</b>
+		<br>
+		The staff management website will let the company's staffs to add and
+		<br>manage merchant and also handle their promotions.
+		<br><br>
+		<b>Role:</b>
+		<br>
+		Me and my team prepared the web page from scratch using HTML, CSS
+		<br>and Javascript. The framework that were used for the UI is Bootstrap.
+		<br><hr>
+		<!-- Modal 1 - Content 2-->
+		<center><p><b>Merchant Management Page</b></p>
+		<img src = "img/screen-2.jpg" height="70%" width="70%">
+		<br>
+		<b>About:</b>
+		<br>
+		The merchant management website will make merchants able to their
+		<br>to appear on the mobile application.
+		<br><br>
+		<b>Role:</b>
+		<br>
+		This also was developed from scratch. AJAX was used to call the API that
+		<br>was prepared by the backend which is same as staff management page.
+		<br><hr>
+		<!-- Modal 1 - Content 3-->
+		<center><p><b>Mobile Appication</b></p>
+		<img src = "img/screen-3.jpg" height="30%" width="30%">
+		<br>
+		<b>About:</b>
+		<br>
+		The mobile app is where users can enjoy discounts from all around the world by
+		<br>showing the promotional codes that are available from it.
+		<br>Links: <a href="https://play.google.com/store/apps/details?id=com.mperkz.kiasu" target="_blank">Google Play</a>
+		and <a href="https://itunes.apple.com/us/app/kiasu-perks/id1091064634?ls=1&mt=8" target="_blank">Apple App Store</a>
+		<br><br>
+		<b>Role:</b>
+		<br>
+		The first version of the app where me and the team helped to develop was in Unity but 
+		<br>was scrapped as the app was too laggy. Then, it was changed using Ionic Framework. 
+		<br>On the development using Ionic Framework, I managed to took part in organizing most
+		<br>of the UI of the mobile application.
+		<br><hr>
+		<!-- Modal 1 - Content 4-->
+		<center><p><b>Promotional Page</b></p>
+		<img src = "img/screen-4.jpg" height="70%" width="70%">
+		<br>
+		<b>About:</b>
+		<br>
+		This is the promotional website for users to know more information
+		<br>about the mobile application which is Kiasu Perks.
+		<br>Link: <a href="http://stage.kiasuperks.com/" target="_blank">Website</a>
+		<br><br>
+		<b>Role:</b>
+		<br>
+		My involvement for this website is not so much which only consist of fixing issues.
+		<br>
+		</center>
+	  </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End first modal -->
+	
+	<!-- Footer -->
+	<footer class="text-center">
+		<div class="footer-below">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 footer-font">
+						&copy; 2016 <a class="my-link" href="index.html">Hafiz Idris</a>. All rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+    <script>
+		$("#myspan").click(function(){
+		window.open("index.html","_self");
+		});
+	</script>
+</body>
+</html>
