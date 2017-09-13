@@ -82,15 +82,15 @@ a:hover {
 .textred{
 	color: #760b25;
 	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 700;
-	font-size: 200%;
+	font-weight: bold;
+	font-size: 23px;
 }
 
 .textwhite{
 	color: #FFFFFF;
 	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 700;
-	font-size: 200%;
+	font-weight: bold;
+	font-size: 23px;
 }
 
 p{
@@ -223,7 +223,7 @@ h6 {
 
 .container {
   position: relative;
-  padding: 25px;
+
 }
 /*animation element*/
 
@@ -387,4 +387,18 @@ hr.fancy-edge:before {
   border-color: #FFFFFF; 
   border-width: 0 0 1px 0; 
   border-radius: 20px; 
+}
+
+.circuit-bg{
+  background-image:    url(../img/circuit.png);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;    
+}
+
+.office-bg{
+  background-image:    url(../img/office.png);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;    
 }
