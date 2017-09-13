@@ -402,3 +402,32 @@ hr.fancy-edge:before {
     background-repeat:   no-repeat;
     background-position: center center;    
 }
+
+.btn3d {
+    transition: all .08s linear;
+    position: relative;
+    outline: medium none;
+    -moz-outline-style: none;
+    border: 0px;
+    margin-top: 15px;
+    top: 0;
+}
+.btn3d:focus {
+    outline: medium none;
+    -moz-outline-style: none;
+}
+.btn3d:active {
+    top: 3px;
+}
+.btn3d.btn-default {
+    box-shadow: 0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #adadad, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+.btn3d:active.btn-default {
+    box-shadow: none;
+}
+
+hr.greyline {
+    border-color: #b2b2b2;
+     border-width: 1px;
+}
