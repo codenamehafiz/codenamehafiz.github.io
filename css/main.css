@@ -431,3 +431,49 @@ hr.greyline {
     border-color: #b2b2b2;
      border-width: 1px;
 }
+
+#wrap {
+  min-height: 100%;
+}
+
+.bg-color-maroon{
+  background-color: #56091c;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom:150px; /* this needs to be bigger than footer height*/
+}
+
+.footer {
+  position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  clear:both;
+  padding-top:20px;
+}
+
+.shadow-top{
+  -webkit-box-shadow: 0px -3px 25px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px -3px 25px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px -3px 25px rgba(50, 50, 50, 0.75);
+}
+
+.shadow-bottom{
+  -webkit-box-shadow: 0px 3px 25px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 3px 25px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 3px 25px rgba(50, 50, 50, 0.75);
+}
+
+.shadow-all{
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+}
+
+@media(max-width:767px){
+  .my-img{
+    height: 50%;
+    width: 50%;
+  }
+}
