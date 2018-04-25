@@ -97,6 +97,12 @@ p{
 	font-size: 20px;
 }
 
+@media only screen and (max-width: 768px) {
+  p{
+    font-size: 16px;
+  }
+}
+
 /* Navbar properties */
 .navbar-default {
   background-color: #760b25;
@@ -537,6 +543,12 @@ box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
   color: #760b25;
 }
 
+@media only screen and (max-width: 768px) {
+  .timeline > li > .timeline-panel {
+    width: 100%;
+  }
+}
+
 .timeline > li > .timeline-panel:before {
   position: absolute;
   top: 26px;
@@ -578,6 +590,12 @@ box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .timeline > li > .timeline-badge {
+    top: -40px;
+  }
 }
 
 .timeline > li.timeline-inverted > .timeline-panel {
