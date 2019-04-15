@@ -74,7 +74,7 @@
         <div class="row mt-3" data-aos="zoom-in" data-aos-easing="ease-in-out">
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="img-container delay-1">
-              <img src="img/showcase-1.png" class="image">
+              <img src="img/project/gargeon.png" class="image">
               <!-- <img src="http://placehold.it/330x300" alt="Avatar" class="image" style="width:100%"> -->
               <div class="middle">
                 <span class="mb-3">
@@ -86,52 +86,51 @@
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="img-container delay-2">
-              <img src="img/showcase-2.png" class="image">
+              <img src="img/project/shtj.png" class="image">
               <div class="middle">
                 <span class="mb-3">
                   A web application that track, calculate and manage the land tax of 14 different district in the state
                   of Johor, Malaysia.
                 </span>
-                <button class="btn btn-light" data-toggle="modal" data-target="#secondModal">View More</button>
+                <button class="btn btn-light" onclick="loadModal('shtj')">View More</button>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="img-container delay-3">
-              <img src="img/showcase-3.png" class="image">
+              <img src="img/project/kiasu.png" class="image">
               <div class="middle">
                 <span class="mb-3">
                   A mobile application that let users to get discount coupons to be used in many different shops &
                   services all around the world.
                 </span>
-                <button class="btn btn-light" data-toggle="modal" data-target="#thirdModal">View More</button>
+                <button class="btn btn-light" onclick="loadModal('kiasu')">View More</button>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="img-container delay-1">
-              <img src="img/showcase-4.png" class="image">
+              <img src="img/project/ptnj.png" class="image">
               <div class="middle">
                 <span class="mb-3">
-                  An online booking form for a trip to Desaru from Singapore or vise versa.
+                  A website for snorkelers to book to their favourite snorkeling places easily.
                 </span>
-                <button class="btn btn-light" data-toggle="modal" data-target="#fourthModal">View More</button>
+                <button class="btn btn-light" data-toggle="modal" onclick="loadModal('ptnj')">View More</button>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="img-container delay-2">
-              <img src="img/showcase-5.png" class="image">
+              <img src="img/project/sg2desaru.png" class="image">
               <div class="middle">
                 <span class="mb-3">
-                  A website for snorkelers to book to their favourite snorkeling places easily.
+                  An online booking form for a trip to Desaru from Singapore or vise versa.
                 </span>
-                <button class="btn btn-light" data-toggle="modal" data-target="#fifthModal">View More</button>
+                <a class="btn btn-light" data-toggle="modal" href="http://sg2desaru.com/" target="_blank">View Website</a>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </section>
   </div>
@@ -156,7 +155,7 @@
 
 
   <!-- Modal Start -->
-  <div class="modal fade" id="firstModal" tabindex="-1" role="dialog">
+  <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
       <div class="modal-content">
         <div class="modal-body">
@@ -165,7 +164,7 @@
               <button type="button" class="close close-sm" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
-              <img src="img/showcase-1.png" class="image">
+              <img id="project-img" src="" class="image">
             </div>
             <div class="col-12 col-lg-8 bg-white p-4 text-center text-lg-left">
               <button type="button" class="close close-lg" data-dismiss="modal" aria-label="Close">
@@ -173,11 +172,9 @@
               </button>
               <div class="modal-desc">
               <div class="modal-label">Project Name:</div>
-              GarGeon
+              <span id="project-name"></span>
               <div class="modal-label mt-3">Project Description:</div>
-              An online-based waste & recycling platform that solves the challenges of the oldest waste industry by using technology.
-              <!-- <div class="modal-label mt-3">Status:</div>
-              Main Features Completed -->
+              <span id="project-desc"></span>
               </div>
             </div>
           </div>
@@ -185,205 +182,6 @@
 
         <div class="modal-body bg-white p-5" id="modal-main">
           
-        </div>
-        <div class="modal-footer bg-white">
-          <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="secondModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-12 col-lg-4 pl-0 pr-0">
-              <img src="img/showcase-2.png" class="image">
-            </div>
-            <div class="col-12 col-lg-8 bg-white p-4">
-              <div class="modal-label">Project Name:</div>
-              Sistem Hasil Tanah Johor (SHTJ)
-              <div class="modal-label mt-3">Project Description:</div>
-              A web application that track, calculate and manage the land tax of 14 different district in the state of Johor, Malaysia.
-              <!-- <div class="modal-label mt-3">Status:</div>
-              Completed -->
-            </div>
-          </div>
-        </div>
-
-        <div class="modal-body bg-white p-4">
-          <div class="modal-label">About:</div>
-          SHTJ is a web application that has 24 modules which have interelation with each other. This project is done by following the agile development method and was planned to go live in 10 months after development. The web application is developed by using the CodeIgniter framework. <br><br>Since this is a government project, I can't disclose too much information in here but to make people understand better, I created a diagram which shows one of the application's flow:
-
-          <div class="text-center">
-          <a href="img/shtj-diagram.png" target="_blank">
-            <img src="img/shtj-diagram.png" class="website-image mt-4">
-          </a>
-          </div>
-
-          <div class="modal-label mt-4">My Contributions:</div>
-          Initially, I was tasked to design all the UI of the application. This include the receipt and slip of different transactions done by the application. Once the UI is completed, I joined in the backend/server-side development.
-
-          <div class="modal-label mt-4">Links</div>
-          The following are the links for some of the UI that I have created:
-          <ul class="mt-3">
-            <li><a href="img/shtj-screen-1.png" target="_blank">Menu</a></li>
-            <li><a href="img/shtj-screen-2.png" target="_blank">Search</a></li>
-            <li><a href="img/shtj-screen-3.png" target="_blank">Payment</a></li>
-          </ul>
-        </div>
-        <div class="modal-footer bg-white">
-          <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="thirdModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-12 col-lg-4 pl-0 pr-0">
-              <img src="img/showcase-3.png" class="image">
-            </div>
-            <div class="col-12 col-lg-8 bg-white p-4">
-              <div class="modal-label">Project Name:</div>
-              Kiasu Perks
-              <div class="modal-label mt-3">Project Description:</div>
-              A mobile application that let users to get discount coupons to be used in many different shops & services all around the world.
-              <!-- <div class="modal-label mt-3">Status:</div>
-              Completed (Discontinued) -->
-            </div>
-          </div>
-        </div>
-
-        <div class="modal-body bg-white p-5">
-          <div class="modal-label">About:</div>
-          Kiasu Perks as a whole consists of four parts which is the mobile app, the admin management page, the merchant page and the landing page. The mobile app is for any user to use while the admin portal allows merchants to post and manage the discount coupons into the mobile app. 
-
-          <div class="modal-label mt-4">Mobile App:</div>
-          The mobile app is where users can enjoy discounts from all around the world by claiming the promotional codes that are available inside of the app.
-
-          <div class="text-center mb-4">
-          <a href="img/kiasu-screen-1.png" target="_blank">
-            <img src="img/kiasu-screen-1.png" class="phone-image mt-4">
-          </a>
-          </div>
-
-          On the first version of the app, the team and I developed the app in Unity but was eventually scrapped as the app was too laggy and suffers several performance issues. To solve this problem, the chief suggested for us to recreate the app using Ionic Framework which have been maintained until the official release of the app.
-
-          <div class="modal-label mt-5">Admin Management Page:</div>
-          The admin management page will allow the admin to add and manage the merchants. Moreover, admin can also control which discount counpons be shown in the mobile app.
-
-          <div class="text-center mb-4">
-          <a href="img/kiasu-screen-2.png" target="_blank">
-            <img src="img/kiasu-screen-2.png" class="website-image mt-4">
-          </a>
-          </div>
-
-          <div class="modal-label mt-5">Merchant Management Page:</div>
-          The merchant management website will give access to merchants for them to create and manage their own promotions that will appear on the mobile app.
-
-          <div class="text-center mb-4">
-          <a href="img/kiasu-screen-3.png" target="_blank">
-            <img src="img/kiasu-screen-3.png" class="website-image mt-4">
-          </a>
-          </div>
-
-          The websites are developed using Bootstrap as the UI and basic PHP without any library. Moreover, AJAX is used in calling the API to show and manipulate the data on the webpage.
-
-          <div class="modal-label mt-5">Landing Page:</div>
-          This is the promotional website for users to know more information about the mobile app.
-
-          <div class="text-center mb-4">
-          <a href="img/kiasu-screen-4.png" target="_blank">
-            <img src="img/kiasu-screen-4.png" class="website-image mt-4">
-          </a>
-          </div>
-
-          <div class="modal-label mt-5">Links</div>
-          Since the project has been discontinued, there's very few links that are still available:
-          <ul class="mt-3">
-            <li>Kiasu Perks Mobile App: <a href="https://www.amazon.com/MPerks-Pte-Ltd-Kiasu-Perks/dp/B01CCO2S2Y">Android link</a></li>
-          </ul>
-        </div>
-        <div class="modal-footer bg-white">
-          <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="fourthModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-12 col-lg-4 pl-0 pr-0">
-              <img src="img/showcase-3.png" class="image">
-            </div>
-            <div class="col-12 col-lg-8 bg-white p-4">
-              <div class="modal-label">Project Name:</div>
-              PTNJ Booking System
-              <div class="modal-label mt-3">Project Description:</div>
-              A website for snorkelers to book to their favourite snorkeling places easily.
-              <!-- <div class="modal-label mt-3">Status:</div>
-              Completed (Discontinued) -->
-            </div>
-          </div>
-        </div>
-
-        <div class="modal-body bg-white p-5">
-          <div class="modal-label">About:</div>
-          PTNJ Booking System is web application where user can book a snorkeling place based on chosen date and find every snorkeling places that are available in Malaysia. This website are done by using the Laravel framework.
-
-          <div class="modal-label mt-4">Mobile App:</div>
-          The mobile app is where users can enjoy discounts from all around the world by claiming the promotional codes that are available inside of the app.
-
-          <div class="text-center mb-4">
-          <a href="img/kiasu-screen-1.png" target="_blank">
-            <img src="img/kiasu-screen-1.png" class="phone-image mt-4">
-          </a>
-          </div>
-
-          On the first version of the app, the team and I developed the app in Unity but was eventually scrapped as the app was too laggy and suffers several performance issues. To solve this problem, the chief suggested for us to recreate the app using Ionic Framework which have been maintained until the official release of the app.
-
-          <div class="modal-label mt-5">Admin Management Page:</div>
-          The admin management page will allow the admin to add and manage the merchants. Moreover, admin can also control which discount counpons be shown in the mobile app.
-
-          <div class="text-center mb-4">
-          <a href="img/kiasu-screen-2.png" target="_blank">
-            <img src="img/kiasu-screen-2.png" class="website-image mt-4">
-          </a>
-          </div>
-
-          <div class="modal-label mt-5">Merchant Management Page:</div>
-          The merchant management website will give access to merchants for them to create and manage their own promotions that will appear on the mobile app.
-
-          <div class="text-center mb-4">
-          <a href="img/kiasu-screen-3.png" target="_blank">
-            <img src="img/kiasu-screen-3.png" class="website-image mt-4">
-          </a>
-          </div>
-
-          The websites are developed using Bootstrap as the UI and basic PHP without any library. Moreover, AJAX is used in calling the API to show and manipulate the data on the webpage.
-
-          <div class="modal-label mt-5">Landing Page:</div>
-          This is the promotional website for users to know more information about the mobile app.
-
-          <div class="text-center mb-4">
-          <a href="img/kiasu-screen-4.png" target="_blank">
-            <img src="img/kiasu-screen-4.png" class="website-image mt-4">
-          </a>
-          </div>
-
-          <div class="modal-label mt-5">Links</div>
-          Since the project has been discontinued, there's very few links that are still available:
-          <ul class="mt-3">
-            <li>Kiasu Perks Mobile App: <a href="https://www.amazon.com/MPerks-Pte-Ltd-Kiasu-Perks/dp/B01CCO2S2Y">Android link</a></li>
-          </ul>
         </div>
         <div class="modal-footer bg-white">
           <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
@@ -435,7 +233,7 @@
     });
 
     function loadModal(name) {
-        $('#firstModal').modal('show');
+        headerModal(name);
         
         var xhttp;
         if (window.XMLHttpRequest) {
@@ -452,7 +250,35 @@
         };
         xhttp.open("GET", "modal/" +name+ ".html", true);
         xhttp.send();
+
+        $('#detailsModal').modal('show');
+    }
+
+    function headerModal(name){
+      if(name == 'gargeon'){
+        $('#project-img').attr('src', 'img/project/'+name+'.png');
+        $('#project-name').html('GarGeon');
+        $('#project-desc').html('An online-based waste & recycling platform that solves the challenges of the oldest waste industry by using technology.');
       }
+
+      if(name == 'shtj'){
+        $('#project-img').attr('src', 'img/project/'+name+'.png');
+        $('#project-name').html('Sistem Hasil Tanah Johor (SHTJ)');
+        $('#project-desc').html('A web application that track, calculate and manage the land tax of 14 different district in the state of Johor, Malaysia.');
+      }
+
+      if(name == 'kiasu'){
+        $('#project-img').attr('src', 'img/project/'+name+'.png');
+        $('#project-name').html('Kiasu Perks');
+        $('#project-desc').html('A mobile application that let users to get discount coupons to be used in many different shops & services all around the world.');
+      }
+
+      if(name == 'ptnj'){
+        $('#project-img').attr('src', 'img/project/'+name+'.png');
+        $('#project-name').html('PTNJ Booking System');
+        $('#project-desc').html('An online booking form for a trip to Desaru from Singapore or vise versa.');
+      }
+    }
   </script>
 </body>
 

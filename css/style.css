@@ -239,11 +239,13 @@ body{
 .phone-image {
 	width: 30%;
 	height: 30%;
+	border: 1px solid #eaeaea;
 }
 
 .website-image {
 	width: 90%;
 	height: 90%;
+	border: 1px solid #eaeaea;
 }
 
 @media (max-width: 991px){
