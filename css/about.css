@@ -4,6 +4,10 @@
 	display: block;
  	margin-left: auto;
  	margin-right: auto;
+ 	border-radius: 50%;
+ 	-webkit-box-shadow: 10px 10px 0px 0px rgba(210,210,210,1);
+	-moz-box-shadow: 10px 10px 0px 0px rgba(210,210,210,1);
+	box-shadow: 10px 10px 0px 0px rgba(210,210,210,1);
 }
 
 .profile-art{
