@@ -20,3 +20,9 @@
 	font-weight: 600;
 	color: #4456DF;
 }
+
+@media (min-width: 767px){
+	.label-top br{
+		display: none;
+	}
+}

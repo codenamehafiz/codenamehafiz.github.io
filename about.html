@@ -4,12 +4,12 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="img/ch.ico">
-  <title>Hafiz, Front-End Developer | Portfolio</title>
+  <title>Hafiz, Front-End Developer | About</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <link href="css/portfolio.css" rel="stylesheet">
+  <link href="css/about.css" rel="stylesheet">
   <!-- <link href="css/animate.css" rel="stylesheet"> -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -27,37 +27,61 @@
         </li>
         <li class="nav-item active p-2">
           <a class="nav-link" href="portfolio.html">Portfolio</a>
-          <hr class="active-line" data-aos="fade-right">
         </li>
         <li class="nav-item p-2">
           <a class="nav-link" href="about.html">About</a>
+          <hr class="active-line" data-aos="fade-right">
         </li>
       </ul>
     </div>
   </nav>
 
   <div class="wrap">
+
     <section class="first-sect">
-      <div class="child-bg bg-grey text-center pt-3 pb-3">
+      <div class="child-bg bg-grey pt-3 pb-3">
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 offset-lg-2">
-              <div class="card card-top">
+            <div class="col-lg-4">
+              <img src="img/me.png" class="image mt-5 profile-pic" data-aos="zoom-in" data-aos-easing="ease-in-out">
+            </div>
+            <div class="col-lg-5 p-5">
+              <div class="title pb-3">Who is Hafiz?</div>
+              <div>Hafiz or my full name, Muhammad Hafiz Bin Mohd Idris is a programmer/developer who have developed web and mobile profesionally since 2016. I am based in the city of Johor Bahru, Johor in Malaysia.</div>
+              <div class="mt-3">I had experience in developing as both front-end and back-end but believe that my ability as front-end is better and will be more beneficial in development.</div>
+              <div class="mt-3">I had also been involved in projects which requires me not only to code but also design the application according to the user needs.</div>
+              <div class="mt-3">During my career, I have worked with few different teams and able to independently handle tasks and colaborate with my teammates/colleagues to achieve a certain milestone.</div>
+              <div class="mt-4" data-aos="fade-up">
+                <a class="btn btn-light" href="img/RESUME-HAFIZ.pdf" target="_blank">View Resume</a>
+              </div>
+            </div>
+            <div class="col-lg-3">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+              <div class="title pt-5 pb-4 text-center">Random Things About Me</div>
+              <div class="question-circle text-center mb-4" data-aos="zoom-in">
+                <span data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="600"><b class="question-mark-1">?</b></span>
+                <span data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="800"><b class="question-mark-2">?</b></span>
+                <span data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="1000"><b class="question-mark-3">?</b></span>
+                <img class="question-img" src="img/me-question.png" data-aos="fade-up" data-aos-easing="ease-in-out"
+                data-aos-delay="300">
+              </div>
+              <div class="card">
                 <div class="card-body">
                   <div class="row">
-                    <div class="col-4 border-right-grey">
-                      <div class="label-top">Ongoing <br>Projects:</div>
-                      <div class="content-top num">1</div>
-                    </div>
-                    <div class="col-4 border-right-grey">
-                      <div class="label-top">Completed <br>Projects:</div>
-                      <div class="content-top num">5</div>
-                    </div>
-                    <div class="col-4">
-                      <div class="label-top">Years of <br>Experience:</div>
-                      <div class="content-top num">3</div>
-                    </div>
+                    <div class="col-6 pl-4">
+                  <div class="question">My favourite Food?</div>
+                  <div class="answer">Pasta</div>
+                </div>
+                <div class="col-6 pr-4">
+                  <div data-aos="zoom-in">
+                    <button class="btn btn-light float-right mt-1" id="randomize">Randomize</button>
                   </div>
+                </div>
+              </div>
+
                 </div>
               </div>
             </div>
@@ -66,66 +90,23 @@
       </div>
     </section>
 
+    <svg class="bg-grey" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1919.934 236.622">
+      <path id="Path_177" data-name="Path 177" d="M10141.934,6721.308c-255.962-200.255-555.232,0-555.232,0s-487.646,241.567-676.884,52.875-687.817,0-687.817,0v94.745h1919.934Z" transform="translate(-8222 -6632.306)" fill="#fff"/>
+    </svg>
+
     <section class="pt-5 pb-5">
       <div class="container">
-        <div class="title">Projects</div>
-        <div class="sub-title">List of projects that I have been involved with.</div>
-        <div class="row mt-3" data-aos="zoom-in" data-aos-easing="ease-in-out">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="img-container delay-1">
-              <img src="img/project/gargeon.png" class="image">
-              <!-- <img src="http://placehold.it/330x300" alt="Avatar" class="image" style="width:100%"> -->
-              <div class="middle">
-                <span class="mb-3">
-                  An online-based waste & recycling platform that solves the challenges of the oldest waste industry by using technology.
-                </span>
-                <button class="btn btn-light" onclick="loadModal('gargeon')">View More</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="img-container delay-2">
-              <img src="img/project/shtj.png" class="image">
-              <div class="middle">
-                <span class="mb-3">
-                  A web application that track, calculate and manage the land tax of 14 different district in the state
-                  of Johor, Malaysia.
-                </span>
-                <button class="btn btn-light" onclick="loadModal('shtj')">Details</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="img-container delay-3">
-              <img src="img/project/kiasu.png" class="image">
-              <div class="middle">
-                <span class="mb-3">
-                  A mobile application that let users to get discount coupons to be used in many different shops &
-                  services all around the world.
-                </span>
-                <button class="btn btn-light" onclick="loadModal('kiasu')">Details</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="img-container delay-1">
-              <img src="img/project/ptnj.png" class="image">
-              <div class="middle">
-                <span class="mb-3">
-                  A website for snorkelers to book to their favourite snorkeling places easily.
-                </span>
-                <button class="btn btn-light" data-toggle="modal" onclick="loadModal('ptnj')">Details</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="img-container delay-2">
-              <img src="img/project/sg2desaru.png" class="image">
-              <div class="middle">
-                <span class="mb-3">
-                  An online booking form for a trip to Desaru from Singapore or vise versa.
-                </span>
-                <a class="btn btn-light" data-toggle="modal" href="http://sg2desaru.com/" target="_blank">View Website</a>
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="title text-center">Interested In Colaborating?</div>
+            <div class="sub-title pb-4">Let's create something great together</div>
+            <div class="dropup">
+              <button class="btn btn-light dropdown-toggle mt-1 mb-3" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact Me </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Email Me</a>
+                <a class="dropdown-item" href="#">WhatsApp Me</a>
+                <a class="dropdown-item" href="#">Contact me on LinkedIn</a>
+                <a class="dropdown-item" href="#">Contact me on Twitter</a>
               </div>
             </div>
           </div>
@@ -225,6 +206,56 @@
 
       $(".num").each(function(index, element) {
         counter($(element));
+      });
+
+      var questionList = [{
+        question: "My favourite food?",
+        answer: "Pasta"
+      }, {
+        question: "My favourite sport to play?",
+        answer: "Ping pong"
+      }, {
+        question: "My hobby?",
+        answer: "Playing games"
+      }, {
+        question: "My unpopular opinion?",
+        answer: "Cheese + egg is a bad"
+      }, {
+        question: "Do I actually like to code?",
+        answer: "No, I love it."
+      }, {
+        question: "My relationship status?",
+        answer: "I'm single"
+      }, {
+        question: "When were I born?",
+        answer: "27 April 1994"
+      }, {
+        question: "My favourite anime?",
+        answer: "FMA: Brotherhood"
+      }, {
+        question: "My favourite movie?",
+        answer: "Ted 2"
+      }, {
+        question: "How many siblings do you have?",
+        answer: "None"
+      }, {
+        question: "My favourite animal?",
+        answer: "Red pandas"
+      }];
+
+      var tempNum = '';
+      $("#randomize").click(function() {
+        var randomNum = Math.floor((Math.random()*10) + 1);
+
+        if(randomNum == tempNum){
+          randomNum = randomNum + 1;
+        }
+        
+        tempNum = randomNum;
+
+
+        $('.question').html(questionList[randomNum].question);
+        $('.answer').html(questionList[randomNum].answer);
       });
     });
   </script>

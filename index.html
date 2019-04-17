@@ -3,7 +3,8 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hafiz, Web & Mobile Developer</title>
+  <link rel="icon" href="img/ch.ico">
+  <title>Hafiz, Front-End Developer</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -17,17 +18,7 @@
   <nav class="navbar navbar-expand-lg navbar-light">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      	<span class="navbar-toggler-icon">
-      	<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 39.899 28">
-		  <g id="Group_21" data-name="Group 21" transform="translate(-51 -51)">
-		    <g id="Group_20" data-name="Group 20" transform="translate(-17 28)">
-		      <rect id="Rectangle_262" data-name="Rectangle 262" width="39.899" height="3" rx="2" transform="translate(68 35)" fill="#4a4a4a"/>
-		      <rect id="Rectangle_263" data-name="Rectangle 263" width="39.899" height="3" rx="2" transform="translate(68 23)" fill="#4a4a4a"/>
-		      <rect id="Rectangle_264" data-name="Rectangle 264" width="39.899" height="3" rx="2" transform="translate(68 47)" fill="#4a4a4a"/>
-		    </g>
-		  </g>
-		</svg>
-		</span>
+      	<span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="nav navbar-nav ml-auto pl-2 pr-2">
@@ -39,7 +30,7 @@
           <a class="nav-link" href="portfolio.html">Portfolio</a>
         </li>
         <li class="nav-item p-2">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="about.html">About</a>
         </li>
       </ul>
     </div>
@@ -90,7 +81,7 @@
 
               <div class="mt-3 mb-4">I have been involved in web / mobile app development since 2015 with applications
                 that consists of wide array of users.</div>
-              <div data-aos="fade-up"><button class="btn btn-light">Know More</button></div>
+              <div data-aos="fade-up"><button class="btn btn-light" onclick="window.location.href='about.html'">Know More</button></div>
             </div>
           </div>
 
@@ -256,40 +247,45 @@
         <div class="row mt-4">
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="img-container delay-1" data-aos="zoom-in" data-aos-easing="ease-in-out">
-              <img src="img/showcase-1.png" class="image">
+              <img src="img/project/gargeon.png" class="image">
               <!-- <img src="http://placehold.it/330x300" alt="Avatar" class="image" style="width:100%"> -->
               <div class="middle">
                 <span class="mb-3">
                   An online-based waste & recycling platform that solves the challenges of the oldest waste industry by using technology.
                 </span>
-                <button class="btn btn-light">View More</button>
+                <button class="btn btn-light" onclick="loadModal('gargeon')">Details</button>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="img-container delay-2" data-aos="zoom-in" data-aos-easing="ease-in-out">
-              <img src="img/showcase-2.png" class="image">
+              <img src="img/project/shtj.png" class="image">
               <div class="middle">
                 <span class="mb-3">
                   A web application that track, calculate and manage the land tax of 14 different district in the state
                   of Johor, Malaysia.
                 </span>
-                <button class="btn btn-light">View More</button>
+                <button class="btn btn-light" onclick="loadModal('shtj')">Details</button>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="img-container delay-3" data-aos="zoom-in" data-aos-easing="ease-in-out">
-              <img src="img/showcase-3.png" class="image">
+              <img src="img/project/kiasu.png" class="image">
               <div class="middle">
                 <span class="mb-3">
                   A mobile application that let users to get discount coupons to be used in many different shops &
                   services all around the world.
                 </span>
-                <button class="btn btn-light">View More</button>
+                <button class="btn btn-light" onclick="loadModal('kiasu')">Details</button>
               </div>
             </div>
           </div>
+        </div>
+        <div class="row mb-5">
+        	<div class="col-12 text-center" data-aos="fade-up">
+        		<button class="btn btn-light" onclick="window.location.href='portfolio.html'">View More</button>
+        	</div>
         </div>
       </div>
     </section>
@@ -313,6 +309,43 @@
     </div>
   </footer>
 
+  <!-- Modal Start -->
+  <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-lg-4 pl-0 pr-0">
+              <button type="button" class="close close-sm" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <img id="project-img" src="" class="image">
+            </div>
+            <div class="col-12 col-lg-8 bg-white p-4 text-center text-lg-left">
+              <button type="button" class="close close-lg" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="modal-desc">
+              <div class="modal-label">Project Name:</div>
+              <span id="project-name"></span>
+              <div class="modal-label mt-3">Project Description:</div>
+              <span id="project-desc"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-body bg-white p-5" id="modal-main">
+          
+        </div>
+        <div class="modal-footer bg-white">
+          <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal End -->
+
   <!-- Javascript CDN -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -324,6 +357,7 @@
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/modal.js"></script>
   <script>
     AOS.init();
   </script>
