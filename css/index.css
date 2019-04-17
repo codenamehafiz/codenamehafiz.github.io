@@ -120,6 +120,12 @@
 	}
 }
 
+@media (max-width: 352px){
+	.second-sect{
+	height: 1440px;
+	}
+}
+
 .child-bg{
 	/*background-color: #4456DF;*/
 	height: 420px;
